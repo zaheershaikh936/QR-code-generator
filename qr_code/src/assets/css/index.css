@@ -1,0 +1,76 @@
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.card{
+    background-color: white;
+    margin:auto;
+    margin-top: 5%;
+    width: 30%;
+    border-radius: 8px;
+}
+.card-header{
+    margin: 1%;
+    padding: 5%;
+    margin: auto;
+}
+
+@media screen and (max-width: 750px) {
+  .card{
+    width: 100%;
+  }
+}
+
+body {
+    background-color: #d5e1ef;
+}
+
+.default_img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.heading_h3{
+    margin-top: -2%;
+}
+
+p {
+    color: gray;
+}
+
+input{
+    height: 30px;
+    border-radius: 5vh;
+    border:2px solid #2c7dfa;
+}
+
+.input_class{
+    width: 85%;
+    margin-left: 7%;
+    padding-left: 2%;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+button {
+    width: 80%;
+    height: 35px;
+    margin-top: -4%;
+    background-color: #2c7dfa;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.download_button{
+    width:50%;
+}
+
+.qr_div{
+    border: 1px solid #2c7dfa;
+    border-radius: 8px;
+}

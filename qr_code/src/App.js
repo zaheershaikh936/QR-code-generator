@@ -1,7 +1,10 @@
+import Card from './component/Card'
+import './assets/css/index.css'
+
 function App() {
   return (
-    <div className="App">
-      <h1>hello</h1>
+    <div className="container">
+      <Card />
     </div>
   );
 }
