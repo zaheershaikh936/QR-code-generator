@@ -6,20 +6,23 @@ const Card = () => {
     const [url, setUrl] = useState();
     const [qrcode, setQrcode] = useState();
 
+    //! this function is used to create qr code 
     const GenerateQRCode = () => {
         QRCode.toDataURL(url, (err, url, ) => {
+            // if error the return error
             if (err)
                 return err;
 
+            // if not then set buffer data into url variable
             setQrcode(url);
         })
     }
 
-    // #2c7dfa
     return (
         <div className='card shadow'>
             <div className='card-header'>
                 <center>
+                    {/* checking qrcode is empty then show the default image else generated */}
                     {qrcode ? <div className='qr_div'><img src={qrcode} alt="default-qr" className="default_img"></img></div> : <img src="https://i.ibb.co/YWxt6V4/default-qr.png" alt="default-qr" className="default_img"></img>}
                 </center>
             </div>
@@ -33,9 +36,6 @@ const Card = () => {
                     </div>
                 </div>
                 <center>
-                    {/* <h3 className='heading_h3'>
-                        Improve your front-end <br></br>skills by building projects
-                    </h3> */}
                     <p>
                         The QR code application is the perfect tool
                         <br></br>
